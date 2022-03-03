@@ -1,0 +1,41 @@
+[[clients]]
+topic = "Optimal Control"
+client = "FlexBlow"
+description = "Real-time bottle blowing control system"
+img = "icons/flexblow.png"
+alt = "Optimal Control"
+
+[[clients]]
+topic = "3D Image Analysis"
+client = "Rubedos"
+description = "Pallet detection system"
+img = "icons/rubedos.png"
+alt = "Computer Vision"
+
+[[clients]]
+topic = "Medical Image Analysis"
+client = "Undisclosed"
+description = "Aortic aneurysm quantification from CT scans"
+img = "icons/aorta.png"
+alt = "Medical Image Analysis"
+
+[[clients]]
+topic = "Data Analysis"
+client = "BCT"
+description = "Data-driven CNC machining optimization"
+img = "icons/bct.png"
+alt = "Data Analysis"
+
+[[clients]]
+topic = "Simulation"
+client = "Sensmetry"
+description = "Simulator for autonomous vehicle safety quantification"
+img = "icons/sensmetry.png"
+alt = "Simulation"
+
+[[clients]]
+topic = "Optimization & Generation"
+client = "Strato.homes"
+description = "Modular house planning"
+img = "icons/strato.png"
+alt = "Optimization"
