@@ -1,0 +1,10 @@
+baseURL = "http://psarka.github.io/hugo/"
+languageCode = "en-us"
+title = "Three Thirds"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Languages
+defaultContentLanguage = 'en'
+[languages]
+    [languages.en]
+    [languages.lt]
