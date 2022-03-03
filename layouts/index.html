@@ -1,2 +1,199 @@
 {{ define "main" }}
+{{ $root := .Site.BaseURL}}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<section class="intro">
+    <div class="content">
+        <h1><span class="light">three</span><span class="bold">thirds</span></h1>
+        <img src="{{$root}}/emblem.png">
+        <h2>We build custom AI solutions for your company</h2>
+    </div>
+</section>
+
+<section class="whatwedo">
+    <div class="content">
+        <h2>Our Services</h2>
+        <p class="normal">We provide AI-driven Industry 5.0 solutions to clients in multiple industries.</p>
+
+        <div class="grid value main">
+            <img src="{{$root}}/our_services.png" alt="Our services">
+
+            <ul class="value">
+                <li class="column">
+                    <p class="bold">We help customers to:</p>
+                    <ul>
+                        <li>build their AI strategy</li>
+                        <li>estimate ROI by building proof of concept solutions</li>
+                        <li>deploy fully working solutions in the field</li>
+                    </ul>
+                </li>
+                <li class="column">
+                    <p class="bold">We bring value by:</p>
+                    <ul>
+                        <li>providing data-driven insights</li>
+                        <li>automating and optimizing processes</li>
+                        <li>gaining a competitive edge through digital transformation</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="portfolio">
+    <div class="content">
+        <h2>Our Portfolio</h2>
+
+        <ul class="grid">
+            <li>
+                <figure>
+                    <img src="{{$root}}/icons/flexblow.png" alt="Optimal Control">
+                    <figcaption>
+                        <p class="topic">Optimal Control</p>
+                        <p class="client">FlexBlow</p>
+                        <p class="description">Real-time bottle blowing control system</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="{{$root}}/icons/rubedos.png" alt="Computer Vision">
+                    <figcaption>
+                        <p class="topic">3D Image Analysis</p>
+                        <p class="client">Rubedos</p>
+                        <p class="description">Pallet detection system</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="{{$root}}/icons/aorta.png" alt="Medical Image Analysis">
+                    <figcaption>
+                        <p class="topic">Medical Image Analysis</p>
+                        <p class="client">Undisclosed</p>
+                        <p class="description">Aortic aneurysm quantification from CT scans</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="{{$root}}/icons/bct.png" alt="B">
+                    <figcaption>
+                        <p class="topic">Data Analysis</p>
+                        <p class="client">BCT</p>
+                        <p class="description">Data-driven CNC machining optimization</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="{{$root}}/icons/sensmetry.png" alt="Simulation">
+                    <figcaption>
+                        <p class="topic">Simulation</p>
+                        <p class="client">Sensmetry</p>
+                        <p class="description">Simulator for autonomous vehicle safety quantification</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="{{$root}}/icons/strato.png" alt="Optimization">
+                    <figcaption>
+                        <p class="topic">Optimization & Generation</p>
+                        <p class="client">Strato.homes</p>
+                        <p class="description">Modular house planning</p>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="team">
+    <div class="content">
+        <h2>Our Team</h2>
+
+        <ul class="grid">
+
+            {{ range $data.team.team_members }}
+            <li>
+                <figure class="person">
+                    <img src="{{$root}}/{{.img}}" alt="{{.name}}">
+                    <figcaption>
+                        <p class="name">{{.name_long}}</p>
+                        <p class="position">{{.position}}</p>
+                        <p>{{.description}}</p>
+                        <a href="{{.linkedin}}"><img src="{{$root}}/icons/linkedin-dark.png" width="20px"></a>
+                    </figcaption>
+                </figure>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
+
+<section class="team">
+    <div class="content">
+        <h2>Co-Founders</h2>
+
+        <ul class="grid">
+
+            {{ range $data.team.founders }}
+            <li>
+                <figure class="person">
+                    <img src="{{$root}}/{{.img}}" alt="{{.name}}">
+                    <figcaption>
+                        <p class="name">{{.name_long}}</p>
+                        <p class="position">{{.position}}</p>
+                        <p>{{.description}}</p>
+                        <a href="{{.linkedin}}"><img src="{{$root}}/icons/linkedin-dark.png" width="20px"></a>
+                    </figcaption>
+                </figure>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="content">
+        <h2>Let's Talk!</h2>
+        <p class="normal">Got a problem that might require machine learning?</p>
+        <p class="normal">Let's discuss your needs!</p>
+
+        <p class="email"><a href="mailto:info@threethirds.ai">
+            <span class="light">info@three</span><span class="bold">thirds</span>.ai</a></p>
+
+        <div class="info">
+            <p class="bold">UAB „Trys trečiosios“</p>
+            <ul class="grid">
+                <li>
+                    <ul class="icons">
+                        <li><a href="https://github.com/threethirds"><img src="/icons/github.png"></a></li>
+                        <li><a href="https://github.com/human-ui"><img src="/icons/github.png"></a></li>
+                        <li><a href="https://www.linkedin.com/company/three-thirds-ai"><img src="/icons/linkedin-light.png"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>M. K. Paco g. 19-10</li>
+                        <li>LT-10309 Vilnius</li>
+                        <li>Lithuania</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>Company code: 305239772</li>
+                        <li>VAT code: LT100012621716</li>
+                        <li>IBAN: LT797300010160013811</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
 {{ end}}

@@ -11,15 +11,15 @@
   <meta name="title" content="Three Thirds"/>
   <meta name="description" content="AI Consulting"/>
 
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="shortcut icon" id="favicon" href="icons/favicon.png">
-  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{.Site.BaseURL}}/css/style.css">
+  <link rel="shortcut icon" id="favicon" href="{{.Site.BaseURL}}/icons/favicon.png">
+  <link rel="icon" href="{{.Site.BaseURL}}/icons/favicon.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
   <!-- No JavaScript in this page because we can and care. -->
 </head>
 
 <body>
-  <h1>{{ .Site.Title }}: {{ .Title }}</h1>
+
   {{ block "main" . }}
   {{ .Content }}
   {{ end}}

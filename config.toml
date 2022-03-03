@@ -7,4 +7,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 defaultContentLanguage = 'en'
 [languages]
     [languages.en]
+        contentDir = 'content/en'
     [languages.lt]
+        contentDir = 'content/lt'
