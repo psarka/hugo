@@ -46,66 +46,19 @@
         <h2>Our Portfolio</h2>
 
         <ul class="grid">
+
+            {{ range $data.portfolio.clients }}
             <li>
                 <figure>
-                    <img src="{{$root}}/icons/flexblow.png" alt="Optimal Control">
+                    <img src="{{$root}}/{{.img}}" alt="{{.alt}}">
                     <figcaption>
-                        <p class="topic">Optimal Control</p>
-                        <p class="client">FlexBlow</p>
-                        <p class="description">Real-time bottle blowing control system</p>
+                        <p class="topic">{{.topic}}</p>
+                        <p class="client">{{.client}}</p>
+                        <p class="description">{{.description}}</p>
                     </figcaption>
                 </figure>
             </li>
-            <li>
-                <figure>
-                    <img src="{{$root}}/icons/rubedos.png" alt="Computer Vision">
-                    <figcaption>
-                        <p class="topic">3D Image Analysis</p>
-                        <p class="client">Rubedos</p>
-                        <p class="description">Pallet detection system</p>
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="{{$root}}/icons/aorta.png" alt="Medical Image Analysis">
-                    <figcaption>
-                        <p class="topic">Medical Image Analysis</p>
-                        <p class="client">Undisclosed</p>
-                        <p class="description">Aortic aneurysm quantification from CT scans</p>
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="{{$root}}/icons/bct.png" alt="B">
-                    <figcaption>
-                        <p class="topic">Data Analysis</p>
-                        <p class="client">BCT</p>
-                        <p class="description">Data-driven CNC machining optimization</p>
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="{{$root}}/icons/sensmetry.png" alt="Simulation">
-                    <figcaption>
-                        <p class="topic">Simulation</p>
-                        <p class="client">Sensmetry</p>
-                        <p class="description">Simulator for autonomous vehicle safety quantification</p>
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="{{$root}}/icons/strato.png" alt="Optimization">
-                    <figcaption>
-                        <p class="topic">Optimization & Generation</p>
-                        <p class="client">Strato.homes</p>
-                        <p class="description">Modular house planning</p>
-                    </figcaption>
-                </figure>
-            </li>
+            {{ end }}
         </ul>
     </div>
 </section>
@@ -170,9 +123,9 @@
             <ul class="grid">
                 <li>
                     <ul class="icons">
-                        <li><a href="https://github.com/threethirds"><img src="/icons/github.png"></a></li>
-                        <li><a href="https://github.com/human-ui"><img src="/icons/github.png"></a></li>
-                        <li><a href="https://www.linkedin.com/company/three-thirds-ai"><img src="/icons/linkedin-light.png"></a>
+                        <li><a href="https://github.com/threethirds"><img src="{{$root}}/icons/github.png"></a></li>
+                        <li><a href="https://github.com/human-ui"><img src="{{$root}}/icons/github.png"></a></li>
+                        <li><a href="https://www.linkedin.com/company/three-thirds-ai"><img src="{{$root}}/icons/linkedin-light.png"></a>
                         </li>
                     </ul>
                 </li>
