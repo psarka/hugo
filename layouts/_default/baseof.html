@@ -2,33 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-        content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
-  <title>three/thirds</title>
+    <title>three/thirds</title>
 
-  <meta name="title" content="Three Thirds"/>
-  <meta name="description" content="AI Consulting"/>
+    <meta name="title" content="Three Thirds"/>
+    <meta name="description" content="AI Consulting"/>
 
-  <link rel="stylesheet" href="{{.Site.BaseURL}}/css/style.css">
-  <link rel="shortcut icon" id="favicon" href="{{.Site.BaseURL}}/icons/favicon.png">
-  <link rel="icon" href="{{.Site.BaseURL}}/icons/favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
-  <!-- No JavaScript in this page because we can and care. -->
+    <link rel="stylesheet" href="{{.Site.BaseURL}}/css/style.css">
+    <link rel="shortcut icon" id="favicon" href="{{.Site.BaseURL}}/icons/favicon.png">
+    <link rel="icon" href="{{.Site.BaseURL}}/icons/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
+    <!-- No JavaScript in this page because we can and care. -->
 </head>
 
 <body>
 
-  {{ block "main" . }}
-  {{ .Content }}
-  {{ end}}
+{{ block "main" . }}
+{{ end}}
 
-  <ul>
-    {{ range $.Site.Home.AllTranslations }}
+<ul>
+    {{ range $.Page.AllTranslations }}
     <li><a href="{{ .Permalink }}">{{ .Language }}</a></li>
     {{ end }}
-  </ul>
+</ul>
 
 </body>
 </html>
