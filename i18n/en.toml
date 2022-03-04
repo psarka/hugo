@@ -2,3 +2,15 @@
 other = "three"
 [thirds]
 other = "thirds"
+[we_build]
+other = "We build custom AI solutions for your company"
+[ai_solutions]
+other = "AI solutions and services"
+[we_help_startups]
+other = "We help startups move fast and test the market by building prototypes and MVPs of their vision"
+[we_help_smes]
+other = "We help <strong>SMEs</strong> improve their products by adding significant AI based features"
+[we_help_enterprises]
+other = "We help <strong>Enterprises</strong> by joining their R&D teams and bringing specific expertise"
+[read_more]
+other = "read more ..."

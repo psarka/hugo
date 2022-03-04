@@ -6,54 +6,54 @@
     <div class="content">
         <h1><span class="light">{{i18n "three"}}</span><span class="bold">{{i18n "thirds"}}</span></h1>
         <img src="{{$root}}/emblem.png">
-        <h2>We build custom AI solutions for your company</h2>
+        <h2>{{i18n "we_build"}}</h2>
     </div>
 </section>
 
 <section class="whatwedo">
     <div class="content">
 
-        <h2>AI solutions and services</h2>
+        <h2>{{i18n "ai_solutions"}}</h2>
 
-        <p>We help <strong>startups</strong> move fast and test the market by building prototypes and MVPs of their vision</p>
+        <p>{{i18n "we_help_startups"}}</p>
 
         <ul>
             <li>
-                <h3>strato.homes</h3>
-                <p>In 7 months we built a PoC AI planner for modular houses.</p>
-                <a href="">read more ...</a>
+                <h3>{{$data.case_summary.strato.client}}</h3>
+                <p>{{$data.case_summary.strato.description}}</p>
+                <a href="{{$root}}/cases/strato">{{i18n "read_more"}}</a>
             </li>
             <li>
-                <h3>Turimeda</h3>
-                <p>In 8 months we built an MVP aorta measurement system.</p>
-                <a href="">read more ...</a>
+                <h3>{{$data.case_summary.turimeda.client}}</h3>
+                <p>{{$data.case_summary.turimeda.description}}</p>
+                <a href="{{$root}}/cases/turimeda">{{i18n "read_more"}}</a>
             </li>
         </ul>
         <hr/>
 
-        <p>We help <strong>SMEs</strong> improve their products by adding significant AI based features</p>
+        <p>{{i18n "we_help_smes"}}</p>
 
         <ul>
             <li>
-                <h3>Rubedos</h3>
-                <p>We built a vision system for the autonomous forklift solution</p>
-                <a href="">read more ...</a>
+                <h3>{{$data.case_summary.rubedos.client}}</h3>
+                <p>{{$data.case_summary.rubedos.description}}</p>
+                <a href="{{$root}}/cases/rubedos">{{i18n "read_more"}}</a>
             </li>
             <li>
-                <h3>FlexBlow</h3>
-                <p>We are building an optimal control system for a bottle blowing machine</p>
-                <a href="">read more ...</a>
+                <h3>{{$data.case_summary.flexblow.client}}</h3>
+                <p>{{$data.case_summary.flexblow.description}}</p>
+                <a href="{{$root}}/cases/flexblow">{{i18n "read_more"}}</a>
             </li>
         </ul>
         <hr/>
 
-        <p>We help <strong>Enterprises</strong> by joining their R&D teams and bringing specific expertise</p>
+        <p>{{i18n "we_help_enterprises"}}</p>
 
         <ul>
             <li>
-                <h3>Girteka</h3>
-                <p>We implemented accurate impact measurement to monitor operational changes</p>
-                <a href="">read more ...</a>
+                <h3>{{$data.case_summary.girteka.client}}</h3>
+                <p>{{$data.case_summary.girteka.description}}</p>
+                <a href="{{$root}}/cases/girteka">{{i18n "read_more"}}</a>
             </li>
         </ul>
 
