@@ -1,86 +1,47 @@
 {{ define "main" }}
 {{ $root := .Site.BaseURL}}
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $case := $data.cases }}
+
+{{ $m := dict (slice "a" "b" "c") "value" }}
+
+{{ $startups    := dict "service" $data.services.startups    "cases" (slice $data.cases.strato  $data.cases.turimeda) }}
+{{ $smes        := dict "service" $data.services.smes        "cases" (slice $data.cases.rubedos $data.cases.flexblow) }}
+{{ $enterprises := dict "service" $data.services.enterprises "cases" (slice $data.cases.girteka) }}
+{{ $services    := slice $startups $smes $enterprises }}
 
 <section class="intro">
     <div class="content">
         <h1><span class="light">{{i18n "three"}}</span><span class="bold">{{i18n "thirds"}}</span></h1>
         <img src="{{$root}}/emblem.png">
-        <h2>{{i18n "we_build"}}</h2>
+        <h2>{{T "we_build"}}</h2>
     </div>
 </section>
 
-<section class="whatwedo">
+{{ range $services }}
+<section id="{{.service.id}}" class="services for-{{.service.id}}">
     <div class="content">
-
-        <h2>{{i18n "ai_solutions"}}</h2>
-
-        <p>{{i18n "we_help_startups"}}</p>
-
-        <ul>
-            <li>
-                <h3>{{$data.case_summary.strato.client}}</h3>
-                <p>{{$data.case_summary.strato.description}}</p>
-                <a href="cases/strato">{{i18n "read_more"}}</a>
-            </li>
-            <li>
-                <h3>{{$data.case_summary.turimeda.client}}</h3>
-                <p>{{$data.case_summary.turimeda.description}}</p>
-                <a href="cases/turimeda">{{i18n "read_more"}}</a>
-            </li>
-        </ul>
-        <hr/>
-
-        <p>{{i18n "we_help_smes"}}</p>
-
-        <ul>
-            <li>
-                <h3>{{$data.case_summary.rubedos.client}}</h3>
-                <p>{{$data.case_summary.rubedos.description}}</p>
-                <a href="cases/rubedos">{{i18n "read_more"}}</a>
-            </li>
-            <li>
-                <h3>{{$data.case_summary.flexblow.client}}</h3>
-                <p>{{$data.case_summary.flexblow.description}}</p>
-                <a href="cases/flexblow">{{i18n "read_more"}}</a>
-            </li>
-        </ul>
-        <hr/>
-
-        <p>{{i18n "we_help_enterprises"}}</p>
-
-        <ul>
-            <li>
-                <h3>{{$data.case_summary.girteka.client}}</h3>
-                <p>{{$data.case_summary.girteka.description}}</p>
-                <a href="cases/girteka">{{i18n "read_more"}}</a>
-            </li>
-        </ul>
-
-    </div>
-</section>
-
-<section class="portfolio">
-    <div class="content">
-        <h2>Our Portfolio</h2>
-
-        <ul class="grid">
-
-            {{ range $data.portfolio.clients }}
-            <li>
-                <figure>
-                    <img src="{{$root}}/{{.img}}" alt="{{.alt}}">
-                    <figcaption>
-                        <p class="topic">{{.topic}}</p>
-                        <p class="client">{{.client}}</p>
-                        <p class="description">{{.description}}</p>
-                    </figcaption>
-                </figure>
-            </li>
+        <div class="service-card">
+            <h2>{{.service.h2}}</h2>
+            <h3>{{.service.h3}}</h3>
+            <p class="description">{{.service.p}}</p>
+        </div>
+        <div class = "service-list">
+            {{ range .cases}}
+            <figure>
+                <img src="{{$root}}/{{.img}}" alt="{{.topic}}">
+                <figcaption>
+                    <p class="topic">{{.topic}}</p>
+                    <p class="client">{{.client}}</p>
+                    <p class="description">{{.description}}</p>
+                    <!-- <p class="read-more">read more...</p> -->
+                </figcaption>
+            </figure>
             {{ end }}
-        </ul>
+        </div>
     </div>
 </section>
+{{ end }}
 
 <section class="team">
     <div class="content">
