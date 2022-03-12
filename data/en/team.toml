@@ -1,3 +1,6 @@
+h2 = "Team"
+h3 = "Meet our ML/AI experts"
+
 [[members]]
 name = "Jonas Kubilius"
 name_long = "Jonas Kubilius, PhD, MIT'08"

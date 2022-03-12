@@ -65,9 +65,11 @@
 </section>
 
 
-<section class="team">
+<section id="team" class="team">
     <div class="content">
-        <h2>Our Team</h2>
+        <h2>{{$data.team.h2}}</h2>
+        <h3>{{$data.team.h3}}</h3>
+
         <ul class="grid">
             {{ range $data.team.members }}
             <li>
@@ -83,12 +85,13 @@
             </li>
             {{ end }}
         </ul>
+
     </div>
 </section>
 
-<section class="team">
+<section class="team co-founders">
     <div class="content">
-        <h2>Co-Founders</h2>
+        <h2>{{T "co_founders"}}</h2>
         <ul class="grid">
             {{ range $data.team.founders }}
             <li>
@@ -107,11 +110,11 @@
     </div>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
     <div class="content">
-        <h2>Let's Talk!</h2>
-        <p class="normal">Got a problem that might require machine learning?</p>
-        <p class="normal">Let's discuss your needs!</p>
+        <h2>{{T "lets_talk"}}!</h2>
+        <p class="normal">{{T "got_a_problem" }}?</p>
+        <p class="normal">{{T "lets_discuss" }}!</p>
 
         <p class="email"><a href="mailto:info@threethirds.ai">
             <span class="light">info@three</span><span class="bold">thirds</span>.ai</a></p>
@@ -132,13 +135,13 @@
                     <ul>
                         <li>M. K. Paco g. 19-10</li>
                         <li>LT-10309 Vilnius</li>
-                        <li>Lithuania</li>
+                        <li>{{T "lithuania"}}</li>
                     </ul>
                 </li>
                 <li>
                     <ul>
-                        <li>Company code: 305239772</li>
-                        <li>VAT code: LT100012621716</li>
+                        <li>{{T "company_code"}}: 305239772</li>
+                        <li>{{T "vat_number"}}: LT100012621716</li>
                         <li>IBAN: LT797300010160013811</li>
                     </ul>
                 </li>
