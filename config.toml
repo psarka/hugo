@@ -1,4 +1,4 @@
-baseURL = "https://psarka.github.io/hugo/"
+baseURL = "https://psarka.github.io/hugo"
 languageCode = "en-us"
 title = "Three Thirds"
 disableKinds = ["taxonomy", "taxonomyTerm"]
