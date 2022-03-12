@@ -1,4 +1,4 @@
-[[team_members]]
+[[members]]
 name = "Jonas Kubilius"
 name_long = "Jonas Kubilius, PhD, MIT'08"
 img = "team/jonas.jpg"
@@ -6,7 +6,7 @@ position = "Bendra-įkūrėjas ir vyresnysis DI inžinierius"
 description = "AI researcher & machine vision expert with publications at NeurIPS and 1000+ citations"
 linkedin = "https://www.linkedin.com/in/qbilius/"
 
-[[team_members]]
+[[members]]
 name = "Paulius Šarka"
 name_long = "Paulius Šarka, PhD"
 img = "team/paulius.jpg"
@@ -14,7 +14,7 @@ position = "Bendra-įkūrėjas ir vyresnysis DI inžinierius"
 description = "Data product owner & engineer of sensor-based solutions, 5+ years of industry experience / ex-Sony"
 linkedin = "https://www.linkedin.com/in/pauliussarka/"
 
-[[team_members]]
+[[members]]
 name = "Linas Klimas"
 name_long = "Linas Klimas"
 img = "team/linas.jpg"
@@ -22,7 +22,7 @@ position = "DI inžinierius"
 description = "Reinforcement learning expert & backend engineer"
 linkedin = "https://www.linkedin.com/in/linasklimas/"
 
-[[team_members]]
+[[members]]
 name = "Gražvydas Šemetulskis"
 name_long = "Gražvydas Šemetulskis, PhD"
 img = "team/grazvydas.jpg"
@@ -30,7 +30,7 @@ position = "DI inžinierius"
 description = "Fraud detection expert & key contributor to HyphBot detection / ex-AdForm"
 linkedin = "https://www.linkedin.com/in/grazvydasem/"
 
-[[team_members]]
+[[members]]
 name = "Lukas Dundulis"
 name_long = "Lukas Dundulis"
 img = "team/lukas.jpg"
@@ -38,7 +38,7 @@ position = "DI stažuotojas"
 description = "BSc Math student @ ETH Zürich"
 linkedin = "https://www.linkedin.com/in/lukas-dundulis/"
 
-[[team_members]]
+[[members]]
 name = "Kristijonas Raudys"
 name_long = "Kristijonas Raudys"
 img = "team/kristijonas.jpg"
